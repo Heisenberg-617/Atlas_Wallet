@@ -15,6 +15,9 @@ downloads/
 eggs/
 .eggs/
 lib/
+# Frontend source helpers must be versioned for builds.
+!atlas_wallet_frontend/src/lib/
+!atlas_wallet_frontend/src/lib/**
 lib64/
 parts/
 sdist/

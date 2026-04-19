@@ -6,8 +6,11 @@ Agentic shopping layer between users and bank partner offers, powered by LangGra
 ```bash
 cd Atlas_Wallet_backend
 uv sync
-export OPENAI_API_KEY="sk-your-key"
+set OPENAI_API_KEY=sk-your-key
 python main.py
+```
+
+For full monorepo deployment on Railway (frontend + backend in one service), see `RAILWAY_DEPLOY.md` at repository root.
 
 
 # Key endpoints
