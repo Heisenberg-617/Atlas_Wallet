@@ -1,10 +1,11 @@
 """Atlas Wallet FastAPI application."""
+import json
 import os
 from pathlib import Path
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse, JSONResponse, RedirectResponse
+from fastapi.responses import FileResponse, JSONResponse, RedirectResponse, Response
 from fastapi.staticfiles import StaticFiles
 
 from api.routes.agent import router as agent_router
@@ -58,6 +59,18 @@ async def root():
 @app.get("/health")
 async def health_check():
     return {"status": "ok", "service": "atlas-wallet-backend"}
+
+
+@app.get("/runtime-config.js", include_in_schema=False)
+async def runtime_config_js():
+    payload = {
+        "VITE_SUPABASE_URL": os.getenv("VITE_SUPABASE_URL", ""),
+        "VITE_SUPABASE_PUBLISHABLE_KEY": os.getenv("VITE_SUPABASE_PUBLISHABLE_KEY", ""),
+        "VITE_ATLAS_API_URL": os.getenv("VITE_ATLAS_API_URL", ""),
+        "VITE_ATLAS_CONTRACT_ID": os.getenv("VITE_ATLAS_CONTRACT_ID", ""),
+    }
+    js = f"window.__ATLAS_RUNTIME_CONFIG__ = {json.dumps(payload)};"
+    return Response(content=js, media_type="application/javascript")
 
 
 @app.get("/api/reset")

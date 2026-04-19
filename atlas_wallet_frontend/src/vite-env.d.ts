@@ -10,3 +10,12 @@ interface ImportMetaEnv {
 interface ImportMeta {
   readonly env: ImportMetaEnv;
 }
+
+interface Window {
+  __ATLAS_RUNTIME_CONFIG__?: {
+    VITE_SUPABASE_URL?: string;
+    VITE_SUPABASE_PUBLISHABLE_KEY?: string;
+    VITE_ATLAS_API_URL?: string;
+    VITE_ATLAS_CONTRACT_ID?: string;
+  };
+}

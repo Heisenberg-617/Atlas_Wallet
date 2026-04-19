@@ -46,12 +46,14 @@ export type AtlasCheckoutResponse = {
   cart: AtlasCartSummary;
 };
 
+const runtimeConfig = window.__ATLAS_RUNTIME_CONFIG__;
+
 const RAW_API_BASE =
-  import.meta.env.VITE_ATLAS_API_URL ?? (import.meta.env.DEV ? "/atlas-api" : "");
+  runtimeConfig?.VITE_ATLAS_API_URL || import.meta.env.VITE_ATLAS_API_URL || (import.meta.env.DEV ? "/atlas-api" : "");
 const API_BASE = RAW_API_BASE.endsWith("/") ? RAW_API_BASE.slice(0, -1) : RAW_API_BASE;
 
 const DEFAULT_CONTRACT_ID =
-  import.meta.env.VITE_ATLAS_CONTRACT_ID ?? "LAN8267230088933305";
+  runtimeConfig?.VITE_ATLAS_CONTRACT_ID || import.meta.env.VITE_ATLAS_CONTRACT_ID || "LAN8267230088933305";
 
 type ApiErrorBody = {
   detail?: string | { message?: string };
