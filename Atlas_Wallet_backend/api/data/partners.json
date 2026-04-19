@@ -1,0 +1,512 @@
+[
+  {
+    "name": "Cortefiel",
+    "category": "Prêt à porter",
+    "discount": "-15%"
+  },
+  {
+    "name": "Women’Secret",
+    "category": "Prêt à porter",
+    "discount": "-15%"
+  },
+  {
+    "name": "Springfield",
+    "category": "Prêt à porter",
+    "discount": "-15"
+  },
+  {
+    "name": "Zippy",
+    "category": "Prêt à porter",
+    "discount": "-15%"
+  },
+  {
+    "name": "AC&CO",
+    "category": "Prêt à porter",
+    "discount": "-20%"
+  },
+  {
+    "name": "Terranova",
+    "category": "Prêt à porter",
+    "discount": "-15%"
+  },
+  {
+    "name": "Pedro del Hierro",
+    "category": "Prêt à porter",
+    "discount": "-15%"
+  },
+  {
+    "name": "Envie Shoes",
+    "category": "Prêt à porter",
+    "discount": "-15%"
+  },
+  {
+    "name": "A Collection Resort",
+    "category": "Hôtellerie",
+    "discount": "-10%"
+  },
+  {
+    "name": "A Collection Business",
+    "category": "Hôtellerie",
+    "discount": "-10%"
+  },
+  {
+    "name": "Relax Hotels",
+    "category": "Hôtellerie",
+    "discount": "-10%"
+  },
+  {
+    "name": "Kaan Hotels",
+    "category": "Hôtellerie",
+    "discount": "-10%"
+  },
+  {
+    "name": "Totem Kids Club",
+    "category": "Divertissement",
+    "discount": "-10%"
+  },
+  {
+    "name": "Mifa Group",
+    "category": "Service",
+    "discount": "-10%"
+  },
+  {
+    "name": "I Lave U",
+    "category": "Service",
+    "discount": "-10%"
+  },
+  {
+    "name": "Lotentika",
+    "category": "Beauté",
+    "discount": "-15%"
+  },
+  {
+    "name": "AdaWall",
+    "category": "Ameublement",
+    "discount": "-10%"
+  },
+  {
+    "name": "Natus",
+    "category": "Beauté",
+    "discount": "-15%"
+  },
+  {
+    "name": "Looxwell Clinic",
+    "category": "Santé",
+    "discount": "10%"
+  },
+  {
+    "name": "Elaabbassi psy Africa",
+    "category": "Santé",
+    "discount": "-10%"
+  },
+  {
+    "name": "Fourniclic",
+    "category": "Culture",
+    "discount": "-5%"
+  },
+  {
+    "name": "BAIT AL KHALIL",
+    "category": "Beauté",
+    "discount": "-5%"
+  },
+  {
+    "name": "Aramex",
+    "category": "Service",
+    "discount": "-20%"
+  },
+  {
+    "name": "The View Hotels",
+    "category": "Hôtellerie",
+    "discount": "-10%"
+  },
+  {
+    "name": "Fun Kids Club",
+    "category": "Divertissement",
+    "discount": "-50%"
+  },
+  {
+    "name": "Groupe Hôtelier Mogador",
+    "category": "Hôtellerie",
+    "discount": "Réduction"
+  },
+  {
+    "name": "Mobilia Triangle d’or",
+    "category": "Ameublement",
+    "discount": "-15%"
+  },
+  {
+    "name": "Flormar",
+    "category": "Beauté",
+    "discount": "-10%"
+  },
+  {
+    "name": "Onomo Group",
+    "category": "Hôtellerie",
+    "discount": "-10%"
+  },
+  {
+    "name": "Dunkin",
+    "category": "Restauration",
+    "discount": "-15%"
+  },
+  {
+    "name": "Domino’s Pizza",
+    "category": "Restauration",
+    "discount": "-15%"
+  },
+  {
+    "name": "Burger King",
+    "category": "Restauration",
+    "discount": "-20%"
+  },
+  {
+    "name": "City Sport",
+    "category": "Prêt à porter",
+    "discount": "-10%"
+  },
+  {
+    "name": "Travelwings",
+    "category": "Service",
+    "discount": "-10%"
+  },
+  {
+    "name": "Biougnach",
+    "category": "Electronique",
+    "discount": "-5%"
+  },
+  {
+    "name": "Samsung",
+    "category": "Electronique",
+    "discount": "-5%"
+  },
+  {
+    "name": "Artsy",
+    "category": "Ameublement",
+    "discount": "-10%"
+  },
+  {
+    "name": "Kenzi Menara Palace",
+    "category": "Hôtellerie",
+    "discount": "-20%"
+  },
+  {
+    "name": "Shiru",
+    "category": "Restauration",
+    "discount": "-15%"
+  },
+  {
+    "name": "PUMA Morocco mall",
+    "category": "Prêt à porter",
+    "discount": "-10%"
+  },
+  {
+    "name": "Setup game",
+    "category": "Code gamer",
+    "discount": "-10%"
+  },
+  {
+    "name": "Mon Jouet",
+    "category": "Divertissement",
+    "discount": "10%"
+  },
+  {
+    "name": "Celio",
+    "category": "Prêt à porter",
+    "discount": "-5%"
+  },
+  {
+    "name": "Istikbal",
+    "category": "Ameublement",
+    "discount": "-5%"
+  },
+  {
+    "name": "Be Sport",
+    "category": "Prêt à porter",
+    "discount": "-10%"
+  },
+  {
+    "name": "Be Wok",
+    "category": "Restauration",
+    "discount": "-20%"
+  },
+  {
+    "name": "Diamantine",
+    "category": "Prêt à porter",
+    "discount": "-15%"
+  },
+  {
+    "name": "Yool",
+    "category": "Culture",
+    "discount": "-10%"
+  },
+  {
+    "name": "Marriott Hotel",
+    "category": "Hôtellerie",
+    "discount": "Réduction"
+  },
+  {
+    "name": "L artiste",
+    "category": "Restauration",
+    "discount": "-10%"
+  },
+  {
+    "name": "Bowling socco alto & Al Mazar",
+    "category": "Divertissement",
+    "discount": "-20%"
+  },
+  {
+    "name": "M. Clinic",
+    "category": "Beauté",
+    "discount": "Réduction"
+  },
+  {
+    "name": "Canal forme",
+    "category": "Fitness",
+    "discount": "Réduction"
+  },
+  {
+    "name": "Karppes",
+    "category": "Beauté",
+    "discount": "-10%"
+  },
+  {
+    "name": "Mobilium",
+    "category": "Ameublement",
+    "discount": "-5%"
+  },
+  {
+    "name": "Yatout Home",
+    "category": "Ameublement",
+    "discount": "-5%"
+  },
+  {
+    "name": "Fun Art Palace",
+    "category": "Divertissement",
+    "discount": "-10%"
+  },
+  {
+    "name": "Isic",
+    "category": "Service",
+    "discount": "27%"
+  },
+  {
+    "name": "Huawei",
+    "category": "Electronique",
+    "discount": "-100 dhs"
+  },
+  {
+    "name": "Mon Demenageur",
+    "category": "Service",
+    "discount": "10%"
+  },
+  {
+    "name": "Ambiance Design",
+    "category": "Ameublement",
+    "discount": "10%"
+  },
+  {
+    "name": "Taxi Sahbi",
+    "category": "Service",
+    "discount": "-10%"
+  },
+  {
+    "name": "Just Fit",
+    "category": "Fitness",
+    "discount": "15%"
+  },
+  {
+    "name": "Nafrim",
+    "category": "Ameublement",
+    "discount": "30%"
+  },
+  {
+    "name": "Vision mazagan",
+    "category": "Santé",
+    "discount": "15%"
+  },
+  {
+    "name": "Dome",
+    "category": "Chocolatier",
+    "discount": "10%"
+  },
+  {
+    "name": "Cantina Mariachi",
+    "category": "Restauration",
+    "discount": "10%"
+  },
+  {
+    "name": "Medical Body Contouring",
+    "category": "Beauté",
+    "discount": "10%"
+  },
+  {
+    "name": "Shu",
+    "category": "Restauration",
+    "discount": "20%"
+  },
+  {
+    "name": "Kidi Club",
+    "category": "Divertissement",
+    "discount": "-30%"
+  },
+  {
+    "name": "Villa 52",
+    "category": "Ameublement",
+    "discount": "15%"
+  },
+  {
+    "name": "Epiltech",
+    "category": "Beauté",
+    "discount": "15%"
+  },
+  {
+    "name": "Expert Du Sommeil",
+    "category": "Ameublement",
+    "discount": "10%"
+  },
+  {
+    "name": "Levi’s",
+    "category": "Prêt à porter",
+    "discount": "10%"
+  },
+  {
+    "name": "Point S",
+    "category": "Service",
+    "discount": "10%"
+  },
+  {
+    "name": "Sushi Club",
+    "category": "Restauration",
+    "discount": "15%"
+  },
+  {
+    "name": "International House",
+    "category": "Culture",
+    "discount": "15%"
+  },
+  {
+    "name": "Calliope",
+    "category": "Culture",
+    "discount": "15%"
+  },
+  {
+    "name": "The Doorz",
+    "category": "Divertissement",
+    "discount": "15%"
+  },
+  {
+    "name": "Fod",
+    "category": "Restauration",
+    "discount": "15%"
+  },
+  {
+    "name": "Bigdil",
+    "category": "Prêt à porter",
+    "discount": "15%"
+  },
+  {
+    "name": "Courir",
+    "category": "Prêt à porter",
+    "discount": "10%"
+  },
+  {
+    "name": "Health & Beauty Center",
+    "category": "Beauté",
+    "discount": "15%"
+  },
+  {
+    "name": "Dream Donuts and Coffee",
+    "category": "Restauration",
+    "discount": "10%"
+  },
+  {
+    "name": "Sixt",
+    "category": "Service",
+    "discount": "10%"
+  },
+  {
+    "name": "Lynx Optique",
+    "category": "Santé",
+    "discount": "10%"
+  },
+  {
+    "name": "Speak Easy",
+    "category": "Culture",
+    "discount": "10%"
+  },
+  {
+    "name": "Hestia",
+    "category": "Ameublement",
+    "discount": "10%"
+  },
+  {
+    "name": "H&A Optic",
+    "category": "Santé",
+    "discount": "10%"
+  },
+  {
+    "name": "Lavetta",
+    "category": "Beauté",
+    "discount": "10%"
+  },
+  {
+    "name": "Le Céladon",
+    "category": "Service",
+    "discount": "-10%"
+  },
+  {
+    "name": "Coco Maison",
+    "category": "Ameublement",
+    "discount": "10%"
+  },
+  {
+    "name": "Atmosphère Maison",
+    "category": "Ameublement",
+    "discount": "5%"
+  },
+  {
+    "name": "Sholk",
+    "category": "Chocolatier",
+    "discount": "10%"
+  },
+  {
+    "name": "Krys",
+    "category": "Santé",
+    "discount": "10%"
+  },
+  {
+    "name": "eBlue Gaming",
+    "category": "Code gamer",
+    "discount": "10%"
+  },
+  {
+    "name": "Afletestore",
+    "category": "Code gamer",
+    "discount": "10%"
+  },
+  {
+    "name": "Avanchi shop",
+    "category": "Code gamer",
+    "discount": "15%"
+  },
+  {
+    "name": "Go Gamer",
+    "category": "Code gamer",
+    "discount": "50%"
+  },
+  {
+    "name": "Commando 75",
+    "category": "Prêt à porter",
+    "discount": "15%"
+  },
+  {
+    "name": "Val Blanc",
+    "category": "Service",
+    "discount": "15%"
+  },
+  {
+    "name": "Amuzeum",
+    "category": "Service",
+    "discount": "10%"
+  }
+]

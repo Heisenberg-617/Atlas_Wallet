@@ -1,0 +1,1324 @@
+[
+  {
+    "name": "Burger King",
+    "category": "Restauration",
+    "discount": "-20%",
+    "products": [
+      {
+        "id": "BK-001",
+        "name": "Whopper Meal",
+        "description": "Whopper burger + frites + boisson 50cl",
+        "price_mad": 79,
+        "discounted_price_mad": 63,
+        "inventory": 200,
+        "rating": 4.2,
+        "tags": ["burger", "meal", "beef"],
+        "availability": "En stock"
+      },
+      {
+        "id": "BK-002",
+        "name": "Double Cheeseburger Meal",
+        "description": "Double cheeseburger + frites medium + boisson",
+        "price_mad": 65,
+        "discounted_price_mad": 52,
+        "inventory": 180,
+        "rating": 4.0,
+        "tags": ["burger", "cheese", "meal"],
+        "availability": "En stock"
+      },
+      {
+        "id": "BK-003",
+        "name": "Chicken Royale Meal",
+        "description": "Sandwich poulet croustillant + frites + boisson",
+        "price_mad": 70,
+        "discounted_price_mad": 56,
+        "inventory": 150,
+        "rating": 4.3,
+        "tags": ["chicken", "sandwich", "meal"],
+        "availability": "En stock"
+      },
+      {
+        "id": "BK-004",
+        "name": "Kids Menu",
+        "description": "Mini burger + frites kids + jus + jouet",
+        "price_mad": 45,
+        "discounted_price_mad": 36,
+        "inventory": 100,
+        "rating": 4.5,
+        "tags": ["kids", "menu", "toy"],
+        "availability": "En stock"
+      }
+    ]
+  },
+  {
+    "name": "Domino's Pizza",
+    "category": "Restauration",
+    "discount": "-15%",
+    "products": [
+      {
+        "id": "DP-001",
+        "name": "Pizza Margherita (Grande)",
+        "description": "Pizza tomate, mozzarella, basilic - taille grande 35cm",
+        "price_mad": 95,
+        "discounted_price_mad": 81,
+        "inventory": 120,
+        "rating": 4.1,
+        "tags": ["pizza", "classic", "végétarien"],
+        "availability": "En stock"
+      },
+      {
+        "id": "DP-002",
+        "name": "Pizza Poulet BBQ (Grande)",
+        "description": "Pizza sauce BBQ, poulet grillé, oignons, poivrons",
+        "price_mad": 115,
+        "discounted_price_mad": 98,
+        "inventory": 110,
+        "rating": 4.4,
+        "tags": ["pizza", "poulet", "bbq"],
+        "availability": "En stock"
+      },
+      {
+        "id": "DP-003",
+        "name": "Combo 2 Pizzas Médium",
+        "description": "2 pizzas médium au choix + 2 boissons 50cl",
+        "price_mad": 175,
+        "discounted_price_mad": 149,
+        "inventory": 80,
+        "rating": 4.6,
+        "tags": ["combo", "deal", "pizza"],
+        "availability": "En stock"
+      },
+      {
+        "id": "DP-004",
+        "name": "Garlic Bread + Dip",
+        "description": "Pain à l'ail beurré + sauce au fromage",
+        "price_mad": 35,
+        "discounted_price_mad": 30,
+        "inventory": 200,
+        "rating": 4.2,
+        "tags": ["side", "bread", "snack"],
+        "availability": "En stock"
+      }
+    ]
+  },
+  {
+    "name": "Dunkin",
+    "category": "Restauration",
+    "discount": "-15%",
+    "products": [
+      {
+        "id": "DK-001",
+        "name": "Café Latte Grand",
+        "description": "Latte crémeux préparé avec espresso double",
+        "price_mad": 35,
+        "discounted_price_mad": 30,
+        "inventory": 500,
+        "rating": 4.0,
+        "tags": ["café", "latte", "boisson chaude"],
+        "availability": "En stock"
+      },
+      {
+        "id": "DK-002",
+        "name": "Box 6 Donuts",
+        "description": "Sélection de 6 donuts glazés et fourrés",
+        "price_mad": 75,
+        "discounted_price_mad": 64,
+        "inventory": 300,
+        "rating": 4.5,
+        "tags": ["donut", "box", "sucré"],
+        "availability": "En stock"
+      },
+      {
+        "id": "DK-003",
+        "name": "Sandwich Breakfast",
+        "description": "Sandwich oeuf, fromage, jambon de dinde sur bagel",
+        "price_mad": 48,
+        "discounted_price_mad": 41,
+        "inventory": 150,
+        "rating": 3.9,
+        "tags": ["breakfast", "sandwich", "oeuf"],
+        "availability": "En stock"
+      }
+    ]
+  },
+  {
+    "name": "Shiru",
+    "category": "Restauration",
+    "discount": "-15%",
+    "products": [
+      {
+        "id": "SH-001",
+        "name": "Bowl Ramen Tonkotsu",
+        "description": "Ramen traditionnel au bouillon de porc, chashu, oeuf mollet",
+        "price_mad": 120,
+        "discounted_price_mad": 102,
+        "inventory": 60,
+        "rating": 4.7,
+        "tags": ["ramen", "japonais", "soupe"],
+        "availability": "En stock"
+      },
+      {
+        "id": "SH-002",
+        "name": "Gyoza Porc (6 pièces)",
+        "description": "Raviolis japonais poêlés, sauce ponzu",
+        "price_mad": 65,
+        "discounted_price_mad": 55,
+        "inventory": 80,
+        "rating": 4.6,
+        "tags": ["gyoza", "entrée", "japonais"],
+        "availability": "En stock"
+      },
+      {
+        "id": "SH-003",
+        "name": "Bento Poulet Teriyaki",
+        "description": "Poulet teriyaki + riz + salade + soupe miso",
+        "price_mad": 110,
+        "discounted_price_mad": 94,
+        "inventory": 70,
+        "rating": 4.5,
+        "tags": ["bento", "poulet", "teriyaki"],
+        "availability": "En stock"
+      }
+    ]
+  },
+  {
+    "name": "Sushi Club",
+    "category": "Restauration",
+    "discount": "15%",
+    "products": [
+      {
+        "id": "SC-001",
+        "name": "Plateau Sushi 20 pièces",
+        "description": "Mix maki, nigiri et california rolls, sauce soja incluse",
+        "price_mad": 150,
+        "discounted_price_mad": 128,
+        "inventory": 50,
+        "rating": 4.3,
+        "tags": ["sushi", "plateau", "japonais"],
+        "availability": "En stock"
+      },
+      {
+        "id": "SC-002",
+        "name": "Salmon Sashimi (8 pièces)",
+        "description": "Tranches de saumon frais premium",
+        "price_mad": 110,
+        "discounted_price_mad": 94,
+        "inventory": 40,
+        "rating": 4.8,
+        "tags": ["sashimi", "saumon", "premium"],
+        "availability": "En stock"
+      },
+      {
+        "id": "SC-003",
+        "name": "Chirashi Bowl",
+        "description": "Bol de riz sushi garni de poissons variés et légumes",
+        "price_mad": 130,
+        "discounted_price_mad": 111,
+        "inventory": 45,
+        "rating": 4.5,
+        "tags": ["chirashi", "bowl", "poisson"],
+        "availability": "En stock"
+      }
+    ]
+  },
+  {
+    "name": "Be Wok",
+    "category": "Restauration",
+    "discount": "-20%",
+    "products": [
+      {
+        "id": "BW-001",
+        "name": "Wok Boeuf Légumes",
+        "description": "Boeuf sauté, poivrons, champignons, sauce aux huîtres, riz",
+        "price_mad": 95,
+        "discounted_price_mad": 76,
+        "inventory": 90,
+        "rating": 4.2,
+        "tags": ["wok", "boeuf", "asiatique"],
+        "availability": "En stock"
+      },
+      {
+        "id": "BW-002",
+        "name": "Wok Crevettes Thaï",
+        "description": "Crevettes, lait de coco, citronnelle, nouilles de riz",
+        "price_mad": 110,
+        "discounted_price_mad": 88,
+        "inventory": 70,
+        "rating": 4.4,
+        "tags": ["wok", "crevettes", "thaï"],
+        "availability": "En stock"
+      },
+      {
+        "id": "BW-003",
+        "name": "Spring Rolls Végétariens (4 pièces)",
+        "description": "Rouleaux croustillants légumes, sauce aigre-douce",
+        "price_mad": 45,
+        "discounted_price_mad": 36,
+        "inventory": 120,
+        "rating": 4.0,
+        "tags": ["entrée", "végétarien", "spring roll"],
+        "availability": "En stock"
+      }
+    ]
+  },
+  {
+    "name": "Levi's",
+    "category": "Prêt à porter",
+    "discount": "10%",
+    "products": [
+      {
+        "id": "LV-001",
+        "name": "Jean 501 Original",
+        "description": "Jean coupe droite classique, denim 100% coton, unisexe",
+        "price_mad": 799,
+        "discounted_price_mad": 719,
+        "inventory": 85,
+        "rating": 4.6,
+        "tags": ["jean", "classique", "denim"],
+        "sizes": ["28", "30", "32", "34", "36"],
+        "availability": "En stock"
+      },
+      {
+        "id": "LV-002",
+        "name": "Jean 512 Slim Taper",
+        "description": "Coupe slim fuselée, stretch confort, bleu medium",
+        "price_mad": 749,
+        "discounted_price_mad": 674,
+        "inventory": 60,
+        "rating": 4.4,
+        "tags": ["jean", "slim", "stretch"],
+        "sizes": ["28", "30", "32", "34"],
+        "availability": "En stock"
+      },
+      {
+        "id": "LV-003",
+        "name": "T-shirt Logo Batwing",
+        "description": "T-shirt coton jersey, logo brodé poitrine, blanc",
+        "price_mad": 279,
+        "discounted_price_mad": 251,
+        "inventory": 120,
+        "rating": 4.2,
+        "tags": ["t-shirt", "logo", "casual"],
+        "sizes": ["S", "M", "L", "XL", "XXL"],
+        "availability": "En stock"
+      }
+    ]
+  },
+  {
+    "name": "PUMA Morocco mall",
+    "category": "Prêt à porter",
+    "discount": "-10%",
+    "products": [
+      {
+        "id": "PM-001",
+        "name": "Sneakers Puma Suede Classic",
+        "description": "Chaussures iconiiques en daim, semelle caoutchouc",
+        "price_mad": 850,
+        "discounted_price_mad": 765,
+        "inventory": 45,
+        "rating": 4.5,
+        "tags": ["sneakers", "suede", "lifestyle"],
+        "sizes": ["39", "40", "41", "42", "43", "44", "45"],
+        "availability": "En stock"
+      },
+      {
+        "id": "PM-002",
+        "name": "Survêtement Puma Essential",
+        "description": "Ensemble veste + pantalon jogging, logo brodé",
+        "price_mad": 699,
+        "discounted_price_mad": 629,
+        "inventory": 50,
+        "rating": 4.3,
+        "tags": ["survêtement", "sport", "casual"],
+        "sizes": ["S", "M", "L", "XL"],
+        "availability": "En stock"
+      },
+      {
+        "id": "PM-003",
+        "name": "Chaussures Running Puma Velocity Nitro",
+        "description": "Running léger, semelle NITRO, drop 8mm",
+        "price_mad": 1150,
+        "discounted_price_mad": 1035,
+        "inventory": 30,
+        "rating": 4.7,
+        "tags": ["running", "performance", "nitro"],
+        "sizes": ["39", "40", "41", "42", "43", "44"],
+        "availability": "En stock"
+      }
+    ]
+  },
+  {
+    "name": "Courir",
+    "category": "Prêt à porter",
+    "discount": "10%",
+    "products": [
+      {
+        "id": "CO-001",
+        "name": "Nike Air Max 270",
+        "description": "Sneakers lifestyle, unité d'air visible 270°, mesh respirant",
+        "price_mad": 1299,
+        "discounted_price_mad": 1169,
+        "inventory": 35,
+        "rating": 4.6,
+        "tags": ["nike", "sneakers", "airmax"],
+        "sizes": ["38", "39", "40", "41", "42", "43", "44", "45"],
+        "availability": "En stock"
+      },
+      {
+        "id": "CO-002",
+        "name": "Adidas Ultraboost 22",
+        "description": "Running premium, semelle Boost, Primeknit+",
+        "price_mad": 1450,
+        "discounted_price_mad": 1305,
+        "inventory": 25,
+        "rating": 4.8,
+        "tags": ["adidas", "running", "ultraboost"],
+        "sizes": ["39", "40", "41", "42", "43", "44", "45"],
+        "availability": "En stock"
+      },
+      {
+        "id": "CO-003",
+        "name": "New Balance 574",
+        "description": "Sneakers classiques cuir et mesh, polyvalentes",
+        "price_mad": 950,
+        "discounted_price_mad": 855,
+        "inventory": 40,
+        "rating": 4.4,
+        "tags": ["new balance", "sneakers", "retro"],
+        "sizes": ["38", "39", "40", "41", "42", "43", "44"],
+        "availability": "En stock"
+      }
+    ]
+  },
+  {
+    "name": "Celio",
+    "category": "Prêt à porter",
+    "discount": "-5%",
+    "products": [
+      {
+        "id": "CE-001",
+        "name": "Chemise Oxford Slim Fit",
+        "description": "Chemise homme coton Oxford, col boutonné, coupe slim",
+        "price_mad": 349,
+        "discounted_price_mad": 332,
+        "inventory": 70,
+        "rating": 4.1,
+        "tags": ["chemise", "oxford", "homme"],
+        "sizes": ["S", "M", "L", "XL", "XXL"],
+        "availability": "En stock"
+      },
+      {
+        "id": "CE-002",
+        "name": "Polo Piqué Basique",
+        "description": "Polo classique 100% coton piqué, logo brodé",
+        "price_mad": 229,
+        "discounted_price_mad": 218,
+        "inventory": 90,
+        "rating": 4.0,
+        "tags": ["polo", "casual", "homme"],
+        "sizes": ["S", "M", "L", "XL"],
+        "availability": "En stock"
+      },
+      {
+        "id": "CE-003",
+        "name": "Chino Slim Stretch",
+        "description": "Pantalon chino élastique, beige, coupe fuselée",
+        "price_mad": 399,
+        "discounted_price_mad": 379,
+        "inventory": 55,
+        "rating": 4.2,
+        "tags": ["chino", "pantalon", "stretch"],
+        "sizes": ["28", "30", "32", "34", "36"],
+        "availability": "En stock"
+      }
+    ]
+  },
+  {
+    "name": "Springfield",
+    "category": "Prêt à porter",
+    "discount": "-15%",
+    "products": [
+      {
+        "id": "SP-001",
+        "name": "Jean Carrot Fit",
+        "description": "Jean délavé coupe carrot moderne, taille mi-haute",
+        "price_mad": 499,
+        "discounted_price_mad": 424,
+        "inventory": 65,
+        "rating": 4.3,
+        "tags": ["jean", "carrot", "moderne"],
+        "sizes": ["28", "30", "32", "34", "36"],
+        "availability": "En stock"
+      },
+      {
+        "id": "SP-002",
+        "name": "Veste en Lin",
+        "description": "Blazer décontracté 100% lin, idéal été",
+        "price_mad": 599,
+        "discounted_price_mad": 509,
+        "inventory": 30,
+        "rating": 4.2,
+        "tags": ["veste", "lin", "été"],
+        "sizes": ["S", "M", "L", "XL"],
+        "availability": "En stock"
+      }
+    ]
+  },
+  {
+    "name": "Samsung",
+    "category": "Electronique",
+    "discount": "-5%",
+    "products": [
+      {
+        "id": "SS-001",
+        "name": "Galaxy A55 5G",
+        "description": "Écran AMOLED 6.6\", 128Go, 50MP, 5000mAh, Android 14",
+        "price_mad": 3499,
+        "discounted_price_mad": 3324,
+        "inventory": 40,
+        "rating": 4.4,
+        "tags": ["smartphone", "5G", "android"],
+        "availability": "En stock"
+      },
+      {
+        "id": "SS-002",
+        "name": "Galaxy S24 FE",
+        "description": "Snapdragon 8 Gen 1, 256Go, triple caméra 50MP, IP68",
+        "price_mad": 6999,
+        "discounted_price_mad": 6649,
+        "inventory": 20,
+        "rating": 4.6,
+        "tags": ["flagship", "smartphone", "premium"],
+        "availability": "En stock"
+      },
+      {
+        "id": "SS-003",
+        "name": "Galaxy Tab S9 FE",
+        "description": "Tablette 10.9\", S Pen inclus, 128Go, Wi-Fi",
+        "price_mad": 4299,
+        "discounted_price_mad": 4084,
+        "inventory": 15,
+        "rating": 4.5,
+        "tags": ["tablette", "s-pen", "productivité"],
+        "availability": "En stock"
+      },
+      {
+        "id": "SS-004",
+        "name": "Galaxy Buds FE",
+        "description": "Écouteurs True Wireless, ANC, autonomie 30h avec boîtier",
+        "price_mad": 1199,
+        "discounted_price_mad": 1139,
+        "inventory": 60,
+        "rating": 4.3,
+        "tags": ["écouteurs", "anc", "wireless"],
+        "availability": "En stock"
+      }
+    ]
+  },
+  {
+    "name": "Huawei",
+    "category": "Electronique",
+    "discount": "-100 dhs",
+    "products": [
+      {
+        "id": "HW-001",
+        "name": "Nova 12i",
+        "description": "Écran OLED 6.7\", 128Go, caméra 108MP, 4000mAh",
+        "price_mad": 2799,
+        "discounted_price_mad": 2699,
+        "inventory": 35,
+        "rating": 4.2,
+        "tags": ["smartphone", "camera", "android"],
+        "availability": "En stock"
+      },
+      {
+        "id": "HW-002",
+        "name": "MatePad 11.5",
+        "description": "Tablette 11.5\", HarmonyOS, 128Go, stylet compatible",
+        "price_mad": 3499,
+        "discounted_price_mad": 3399,
+        "inventory": 18,
+        "rating": 4.3,
+        "tags": ["tablette", "harmony", "productivité"],
+        "availability": "En stock"
+      },
+      {
+        "id": "HW-003",
+        "name": "FreeBuds 5i",
+        "description": "Écouteurs True Wireless, ANC multi-mode, autonomie 28h",
+        "price_mad": 999,
+        "discounted_price_mad": 899,
+        "inventory": 50,
+        "rating": 4.1,
+        "tags": ["écouteurs", "anc", "wireless"],
+        "availability": "En stock"
+      }
+    ]
+  },
+  {
+    "name": "Kenzi Menara Palace",
+    "category": "Hôtellerie",
+    "discount": "-20%",
+    "products": [
+      {
+        "id": "KP-001",
+        "name": "Chambre Supérieure Vue Jardin",
+        "description": "Chambre 35m², king bed, vue jardins, petit-déjeuner inclus",
+        "price_mad": 1800,
+        "discounted_price_mad": 1440,
+        "inventory": 20,
+        "rating": 4.7,
+        "tags": ["hôtel", "luxe", "marrakech"],
+        "availability": "Disponible"
+      },
+      {
+        "id": "KP-002",
+        "name": "Suite Junior Piscine",
+        "description": "Suite 55m², accès piscine privée, terrasse, demi-pension",
+        "price_mad": 3200,
+        "discounted_price_mad": 2560,
+        "inventory": 8,
+        "rating": 4.9,
+        "tags": ["suite", "piscine", "luxe"],
+        "availability": "Disponible"
+      },
+      {
+        "id": "KP-003",
+        "name": "Journée Spa & Hammam",
+        "description": "Accès hammam + gommage + massage 60min + déjeuner",
+        "price_mad": 950,
+        "discounted_price_mad": 760,
+        "inventory": 15,
+        "rating": 4.8,
+        "tags": ["spa", "hammam", "bien-être"],
+        "availability": "Disponible"
+      }
+    ]
+  },
+  {
+    "name": "Onomo Group",
+    "category": "Hôtellerie",
+    "discount": "-10%",
+    "products": [
+      {
+        "id": "ON-001",
+        "name": "Chambre Standard City View",
+        "description": "Chambre 24m², lit queen, Wi-Fi, petit-déjeuner buffet",
+        "price_mad": 750,
+        "discounted_price_mad": 675,
+        "inventory": 35,
+        "rating": 4.2,
+        "tags": ["hôtel", "business", "centre-ville"],
+        "availability": "Disponible"
+      },
+      {
+        "id": "ON-002",
+        "name": "Chambre Supérieure Lit King",
+        "description": "Chambre 30m², lit king, bureau, lounger, petit-déjeuner",
+        "price_mad": 950,
+        "discounted_price_mad": 855,
+        "inventory": 20,
+        "rating": 4.3,
+        "tags": ["hôtel", "king", "business"],
+        "availability": "Disponible"
+      }
+    ]
+  },
+  {
+    "name": "Relax Hotels",
+    "category": "Hôtellerie",
+    "discount": "-10%",
+    "products": [
+      {
+        "id": "RH-001",
+        "name": "Séjour Détente 2 nuits",
+        "description": "2 nuits chambre double, pension complète, accès spa",
+        "price_mad": 1600,
+        "discounted_price_mad": 1440,
+        "inventory": 12,
+        "rating": 4.4,
+        "tags": ["séjour", "détente", "pension complète"],
+        "availability": "Disponible"
+      },
+      {
+        "id": "RH-002",
+        "name": "Chambre Supérieure Piscine",
+        "description": "Chambre 32m² vue piscine, petit-déjeuner buffet, parking",
+        "price_mad": 900,
+        "discounted_price_mad": 810,
+        "inventory": 18,
+        "rating": 4.3,
+        "tags": ["hôtel", "piscine", "famille"],
+        "availability": "Disponible"
+      }
+    ]
+  },
+  {
+    "name": "Flormar",
+    "category": "Beauté",
+    "discount": "-10%",
+    "products": [
+      {
+        "id": "FL-001",
+        "name": "Rouge à Lèvres Full Color",
+        "description": "Rouge à lèvres haute pigmentation, formule longue tenue 12h",
+        "price_mad": 89,
+        "discounted_price_mad": 80,
+        "inventory": 200,
+        "rating": 4.3,
+        "tags": ["maquillage", "lèvres", "longue tenue"],
+        "availability": "En stock"
+      },
+      {
+        "id": "FL-002",
+        "name": "Fond de Teint Stay Up",
+        "description": "Fond de teint fluide, tenue 24h, SPF15, 30ml",
+        "price_mad": 149,
+        "discounted_price_mad": 134,
+        "inventory": 120,
+        "rating": 4.2,
+        "tags": ["fond de teint", "maquillage", "spf"],
+        "availability": "En stock"
+      },
+      {
+        "id": "FL-003",
+        "name": "Palette Eyeshadow 9 teintes",
+        "description": "Palette fards à paupières, mats et nacrés, longue tenue",
+        "price_mad": 199,
+        "discounted_price_mad": 179,
+        "inventory": 80,
+        "rating": 4.5,
+        "tags": ["palette", "yeux", "maquillage"],
+        "availability": "En stock"
+      }
+    ]
+  },
+  {
+    "name": "Lotentika",
+    "category": "Beauté",
+    "discount": "-15%",
+    "products": [
+      {
+        "id": "LT-001",
+        "name": "Huile de Beauté Argan Pure",
+        "description": "Huile d'argan 100% pure pressée à froid, 30ml, visage et cheveux",
+        "price_mad": 220,
+        "discounted_price_mad": 187,
+        "inventory": 90,
+        "rating": 4.7,
+        "tags": ["argan", "huile", "naturel"],
+        "availability": "En stock"
+      },
+      {
+        "id": "LT-002",
+        "name": "Crème Hydratante Beurre de Karité",
+        "description": "Crème corps nourrissante, beurre de karité bio, 200ml",
+        "price_mad": 175,
+        "discounted_price_mad": 149,
+        "inventory": 100,
+        "rating": 4.6,
+        "tags": ["crème", "karité", "corps"],
+        "availability": "En stock"
+      },
+      {
+        "id": "LT-003",
+        "name": "Coffret Soin Ritual Marocain",
+        "description": "Savon beldi + ghassoul + huile d'argan + kessa - coffret cadeau",
+        "price_mad": 450,
+        "discounted_price_mad": 383,
+        "inventory": 40,
+        "rating": 4.8,
+        "tags": ["coffret", "soin", "cadeau"],
+        "availability": "En stock"
+      }
+    ]
+  },
+  {
+    "name": "Health & Beauty Center",
+    "category": "Beauté",
+    "discount": "15%",
+    "products": [
+      {
+        "id": "HB-001",
+        "name": "Séance Soin du Visage Hydratant",
+        "description": "Nettoyage + gommage + masque hydratant + soin contour yeux, 60min",
+        "price_mad": 350,
+        "discounted_price_mad": 298,
+        "inventory": 25,
+        "rating": 4.6,
+        "tags": ["soin visage", "hydratant", "cabine"],
+        "availability": "Sur réservation"
+      },
+      {
+        "id": "HB-002",
+        "name": "Épilation Laser Jambes Complètes",
+        "description": "Séance épilation laser diode, jambes entières, peau foncée compatible",
+        "price_mad": 800,
+        "discounted_price_mad": 680,
+        "inventory": 15,
+        "rating": 4.5,
+        "tags": ["épilation", "laser", "jambes"],
+        "availability": "Sur réservation"
+      },
+      {
+        "id": "HB-003",
+        "name": "Massage Relaxant Corps Entier",
+        "description": "Massage suédois 60min aux huiles essentielles, ambiance zen",
+        "price_mad": 450,
+        "discounted_price_mad": 383,
+        "inventory": 20,
+        "rating": 4.7,
+        "tags": ["massage", "relaxation", "bien-être"],
+        "availability": "Sur réservation"
+      }
+    ]
+  },
+  {
+    "name": "Lynx Optique",
+    "category": "Santé",
+    "discount": "10%",
+    "products": [
+      {
+        "id": "LO-001",
+        "name": "Montures Tendance + Verres Progressifs",
+        "description": "Monture designer + verres progressifs antireflet, bilan inclus",
+        "price_mad": 1500,
+        "discounted_price_mad": 1350,
+        "inventory": 30,
+        "rating": 4.4,
+        "tags": ["lunettes", "progressif", "optique"],
+        "availability": "En stock"
+      },
+      {
+        "id": "LO-002",
+        "name": "Lunettes Soleil Polarisées",
+        "description": "Monture acétate, verres polarisés UV400, protection totale",
+        "price_mad": 750,
+        "discounted_price_mad": 675,
+        "inventory": 50,
+        "rating": 4.5,
+        "tags": ["soleil", "polarisé", "UV400"],
+        "availability": "En stock"
+      },
+      {
+        "id": "LO-003",
+        "name": "Bilan Visuel Complet",
+        "description": "Examen complet de la vue + bilan kératométrique + fond d'oeil",
+        "price_mad": 200,
+        "discounted_price_mad": 180,
+        "inventory": 40,
+        "rating": 4.6,
+        "tags": ["bilan", "santé", "vision"],
+        "availability": "Sur réservation"
+      }
+    ]
+  },
+  {
+    "name": "Krys",
+    "category": "Santé",
+    "discount": "10%",
+    "products": [
+      {
+        "id": "KR-001",
+        "name": "Pack Lunettes Complètes Entrée de Gamme",
+        "description": "Monture + verres unifocaux antireflet, bilan visuel offert",
+        "price_mad": 799,
+        "discounted_price_mad": 719,
+        "inventory": 35,
+        "rating": 4.2,
+        "tags": ["lunettes", "accessibles", "monofocal"],
+        "availability": "En stock"
+      },
+      {
+        "id": "KR-002",
+        "name": "Lentilles Mensuelles (3 mois)",
+        "description": "Pack 3 mois lentilles souples journalières ou mensuelles",
+        "price_mad": 450,
+        "discounted_price_mad": 405,
+        "inventory": 60,
+        "rating": 4.3,
+        "tags": ["lentilles", "contact", "vision"],
+        "availability": "En stock"
+      }
+    ]
+  },
+  {
+    "name": "H&A Optic",
+    "category": "Santé",
+    "discount": "10%",
+    "products": [
+      {
+        "id": "HA-001",
+        "name": "Montures Premium + Verres Antireflet",
+        "description": "Monture haut de gamme + verres avec traitement antireflet et anti-lumière bleue",
+        "price_mad": 1200,
+        "discounted_price_mad": 1080,
+        "inventory": 25,
+        "rating": 4.5,
+        "tags": ["premium", "antireflet", "lumière bleue"],
+        "availability": "En stock"
+      },
+      {
+        "id": "HA-002",
+        "name": "Lunettes Gaming Anti-Lumière Bleue",
+        "description": "Lunettes sans correction, filtre lumière bleue 40%, idéal écrans",
+        "price_mad": 399,
+        "discounted_price_mad": 359,
+        "inventory": 45,
+        "rating": 4.4,
+        "tags": ["gaming", "écran", "lumière bleue"],
+        "availability": "En stock"
+      }
+    ]
+  },
+  {
+    "name": "Just Fit",
+    "category": "Fitness",
+    "discount": "15%",
+    "products": [
+      {
+        "id": "JF-001",
+        "name": "Abonnement Mensuel",
+        "description": "Accès illimité salle + cours collectifs, tout équipement inclus",
+        "price_mad": 399,
+        "discounted_price_mad": 339,
+        "inventory": 100,
+        "rating": 4.3,
+        "tags": ["abonnement", "fitness", "salle de sport"],
+        "availability": "Disponible"
+      },
+      {
+        "id": "JF-002",
+        "name": "Abonnement Annuel",
+        "description": "12 mois accès illimité + bilan forme offert + 2 séances coach",
+        "price_mad": 3600,
+        "discounted_price_mad": 3060,
+        "inventory": 50,
+        "rating": 4.5,
+        "tags": ["abonnement", "annuel", "coach"],
+        "availability": "Disponible"
+      },
+      {
+        "id": "JF-003",
+        "name": "Séance Coach Personnel (1h)",
+        "description": "Entraînement personnalisé avec coach certifié, programme sur-mesure",
+        "price_mad": 250,
+        "discounted_price_mad": 213,
+        "inventory": 30,
+        "rating": 4.7,
+        "tags": ["coach", "personnel", "programme"],
+        "availability": "Sur réservation"
+      }
+    ]
+  },
+  {
+    "name": "Canal forme",
+    "category": "Fitness",
+    "discount": "Réduction",
+    "products": [
+      {
+        "id": "CF-001",
+        "name": "Abonnement Mensuel Accès Libre",
+        "description": "Accès piscine + salle muscu + hammam, 7j/7",
+        "price_mad": 450,
+        "discounted_price_mad": 360,
+        "inventory": 80,
+        "rating": 4.2,
+        "tags": ["piscine", "fitness", "hammam"],
+        "availability": "Disponible"
+      },
+      {
+        "id": "CF-002",
+        "name": "Cours Yoga (10 séances)",
+        "description": "Carnet 10 séances yoga, Vinyasa ou Hatha, horaires flexibles",
+        "price_mad": 600,
+        "discounted_price_mad": 480,
+        "inventory": 40,
+        "rating": 4.4,
+        "tags": ["yoga", "cours", "bien-être"],
+        "availability": "Disponible"
+      }
+    ]
+  },
+  {
+    "name": "International House",
+    "category": "Culture",
+    "discount": "15%",
+    "products": [
+      {
+        "id": "IH-001",
+        "name": "Cours d'Anglais Général (Trimestre)",
+        "description": "60h cours présentiel, groupes 8 max, certification intermédiaire",
+        "price_mad": 3500,
+        "discounted_price_mad": 2975,
+        "inventory": 20,
+        "rating": 4.6,
+        "tags": ["anglais", "cours", "certification"],
+        "availability": "Inscription ouverte"
+      },
+      {
+        "id": "IH-002",
+        "name": "Cours Business English",
+        "description": "Formation anglais professionnel, 30h, préparation TOEIC incluse",
+        "price_mad": 4500,
+        "discounted_price_mad": 3825,
+        "inventory": 15,
+        "rating": 4.7,
+        "tags": ["business", "anglais", "TOEIC"],
+        "availability": "Inscription ouverte"
+      }
+    ]
+  },
+  {
+    "name": "Speak Easy",
+    "category": "Culture",
+    "discount": "10%",
+    "products": [
+      {
+        "id": "SE-001",
+        "name": "Cours Conversation Anglaise (Mensuel)",
+        "description": "4 séances/mois conversation 100% orale, groupes 6 max",
+        "price_mad": 1200,
+        "discounted_price_mad": 1080,
+        "inventory": 25,
+        "rating": 4.5,
+        "tags": ["conversation", "anglais", "oral"],
+        "availability": "Inscription ouverte"
+      },
+      {
+        "id": "SE-002",
+        "name": "Stage Intensif Été (2 semaines)",
+        "description": "Immersion lingusitique 20h + activités culturelles + certificat",
+        "price_mad": 2500,
+        "discounted_price_mad": 2250,
+        "inventory": 12,
+        "rating": 4.8,
+        "tags": ["intensif", "été", "immersion"],
+        "availability": "Inscription ouverte"
+      }
+    ]
+  },
+  {
+    "name": "Calliope",
+    "category": "Culture",
+    "discount": "15%",
+    "products": [
+      {
+        "id": "CA-001",
+        "name": "Cours de Français Débutant",
+        "description": "Initiation français 40h, niveau A1→A2, supports inclus",
+        "price_mad": 2000,
+        "discounted_price_mad": 1700,
+        "inventory": 20,
+        "rating": 4.4,
+        "tags": ["français", "débutant", "cours"],
+        "availability": "Inscription ouverte"
+      },
+      {
+        "id": "CA-002",
+        "name": "Atelier Écriture Créative",
+        "description": "8 séances de 2h, techniques narratives, publication anthologie",
+        "price_mad": 1500,
+        "discounted_price_mad": 1275,
+        "inventory": 10,
+        "rating": 4.6,
+        "tags": ["écriture", "créativité", "atelier"],
+        "availability": "Inscription ouverte"
+      }
+    ]
+  },
+  {
+    "name": "Aramex",
+    "category": "Service",
+    "discount": "-20%",
+    "products": [
+      {
+        "id": "AR-001",
+        "name": "Envoi National Express (1kg)",
+        "description": "Livraison J+1 partout au Maroc, tracking temps réel, assurance incluse",
+        "price_mad": 45,
+        "discounted_price_mad": 36,
+        "inventory": 999,
+        "rating": 4.2,
+        "tags": ["livraison", "express", "national"],
+        "availability": "Disponible"
+      },
+      {
+        "id": "AR-002",
+        "name": "Envoi International (0.5kg)",
+        "description": "Colis international jusqu'à 500g, délai 5-7j, Europe & USA",
+        "price_mad": 220,
+        "discounted_price_mad": 176,
+        "inventory": 999,
+        "rating": 4.0,
+        "tags": ["international", "colis", "export"],
+        "availability": "Disponible"
+      },
+      {
+        "id": "AR-003",
+        "name": "Abonnement Shop & Ship (Annuel)",
+        "description": "Adresse UK + USA + FR pour achats en ligne, 12 mois",
+        "price_mad": 299,
+        "discounted_price_mad": 239,
+        "inventory": 500,
+        "rating": 4.5,
+        "tags": ["shop&ship", "import", "abonnement"],
+        "availability": "Disponible"
+      }
+    ]
+  },
+  {
+    "name": "Sixt",
+    "category": "Service",
+    "discount": "10%",
+    "products": [
+      {
+        "id": "SX-001",
+        "name": "Location Citadine (Jour)",
+        "description": "Dacia Sandero ou similaire, kilométrage illimité, assurance tous risques",
+        "price_mad": 299,
+        "discounted_price_mad": 269,
+        "inventory": 20,
+        "rating": 4.1,
+        "tags": ["location", "voiture", "citadine"],
+        "availability": "Disponible"
+      },
+      {
+        "id": "SX-002",
+        "name": "Location SUV (Week-end)",
+        "description": "Duster ou similaire, ven-dim, GPS + siège enfant offerts",
+        "price_mad": 850,
+        "discounted_price_mad": 765,
+        "inventory": 10,
+        "rating": 4.3,
+        "tags": ["SUV", "week-end", "famille"],
+        "availability": "Disponible"
+      }
+    ]
+  },
+  {
+    "name": "Taxi Sahbi",
+    "category": "Service",
+    "discount": "-10%",
+    "products": [
+      {
+        "id": "TS-001",
+        "name": "Trajet Urbain Standard",
+        "description": "Course en ville, véhicule climatisé, paiement carte accepté",
+        "price_mad": 30,
+        "discounted_price_mad": 27,
+        "inventory": 999,
+        "rating": 4.3,
+        "tags": ["taxi", "urbain", "transport"],
+        "availability": "Disponible"
+      },
+      {
+        "id": "TS-002",
+        "name": "Transfert Aéroport",
+        "description": "Prise en charge jusqu'à l'aéroport, véhicule premium, 4 personnes",
+        "price_mad": 150,
+        "discounted_price_mad": 135,
+        "inventory": 999,
+        "rating": 4.6,
+        "tags": ["aéroport", "transfert", "premium"],
+        "availability": "Disponible"
+      }
+    ]
+  },
+  {
+    "name": "Fun Kids Club",
+    "category": "Divertissement",
+    "discount": "-50%",
+    "products": [
+      {
+        "id": "FK-001",
+        "name": "Entrée Journée Enfant",
+        "description": "Accès toutes activités (jeux, trampolines, piscine à balles), enfant jusqu'à 12 ans",
+        "price_mad": 120,
+        "discounted_price_mad": 60,
+        "inventory": 80,
+        "rating": 4.6,
+        "tags": ["enfant", "jeux", "journée"],
+        "availability": "Disponible"
+      },
+      {
+        "id": "FK-002",
+        "name": "Pack Anniversaire (10 enfants)",
+        "description": "Salle privatisée 2h + animateur + goûter + 10 entrées",
+        "price_mad": 1500,
+        "discounted_price_mad": 750,
+        "inventory": 5,
+        "rating": 4.8,
+        "tags": ["anniversaire", "groupe", "privatisation"],
+        "availability": "Sur réservation"
+      }
+    ]
+  },
+  {
+    "name": "Bowling socco alto & Al Mazar",
+    "category": "Divertissement",
+    "discount": "-20%",
+    "products": [
+      {
+        "id": "BL-001",
+        "name": "Partie Bowling (piste/heure)",
+        "description": "1 heure sur piste bowling, jusqu'à 6 joueurs, chaussures incluses",
+        "price_mad": 150,
+        "discounted_price_mad": 120,
+        "inventory": 16,
+        "rating": 4.3,
+        "tags": ["bowling", "sport", "loisir"],
+        "availability": "Disponible"
+      },
+      {
+        "id": "BL-002",
+        "name": "Pack 2h + Boissons",
+        "description": "2h piste bowling + 4 boissons offertes, réservation recommandée",
+        "price_mad": 280,
+        "discounted_price_mad": 224,
+        "inventory": 10,
+        "rating": 4.5,
+        "tags": ["pack", "bowling", "soirée"],
+        "availability": "Sur réservation"
+      }
+    ]
+  },
+  {
+    "name": "Go Gamer",
+    "category": "Code gamer",
+    "discount": "50%",
+    "products": [
+      {
+        "id": "GG-001",
+        "name": "Carte PSN 50$ US",
+        "description": "Code PlayStation Network 50 dollars US, livraison email instantanée",
+        "price_mad": 599,
+        "discounted_price_mad": 300,
+        "inventory": 200,
+        "rating": 4.7,
+        "tags": ["PSN", "PlayStation", "code"],
+        "availability": "En stock"
+      },
+      {
+        "id": "GG-002",
+        "name": "Xbox Game Pass Ultimate (3 mois)",
+        "description": "Abonnement Game Pass Ultimate 3 mois, 300+ jeux inclus",
+        "price_mad": 499,
+        "discounted_price_mad": 250,
+        "inventory": 100,
+        "rating": 4.8,
+        "tags": ["Xbox", "Game Pass", "abonnement"],
+        "availability": "En stock"
+      },
+      {
+        "id": "GG-003",
+        "name": "V-Bucks Fortnite 1000",
+        "description": "1000 V-Bucks Fortnite, toutes plateformes",
+        "price_mad": 120,
+        "discounted_price_mad": 60,
+        "inventory": 500,
+        "rating": 4.5,
+        "tags": ["Fortnite", "V-Bucks", "in-game"],
+        "availability": "En stock"
+      }
+    ]
+  },
+  {
+    "name": "Avanchi shop",
+    "category": "Code gamer",
+    "discount": "15%",
+    "products": [
+      {
+        "id": "AV-001",
+        "name": "Carte Steam 50$",
+        "description": "Code Steam Wallet 50 dollars, toutes régions",
+        "price_mad": 549,
+        "discounted_price_mad": 467,
+        "inventory": 150,
+        "rating": 4.6,
+        "tags": ["Steam", "PC gaming", "code"],
+        "availability": "En stock"
+      },
+      {
+        "id": "AV-002",
+        "name": "FIFA Points 1600",
+        "description": "1600 FC Points pour FIFA Ultimate Team, toutes plateformes",
+        "price_mad": 199,
+        "discounted_price_mad": 169,
+        "inventory": 300,
+        "rating": 4.4,
+        "tags": ["FIFA", "EA Sports", "in-game"],
+        "availability": "En stock"
+      }
+    ]
+  },
+  {
+    "name": "Istikbal",
+    "category": "Ameublement",
+    "discount": "-5%",
+    "products": [
+      {
+        "id": "IS-001",
+        "name": "Canapé d'angle 5 places",
+        "description": "Canapé d'angle convertible tissu, coffre de rangement, gris anthracite",
+        "price_mad": 8500,
+        "discounted_price_mad": 8075,
+        "inventory": 8,
+        "rating": 4.3,
+        "tags": ["canapé", "angle", "convertible"],
+        "availability": "En stock"
+      },
+      {
+        "id": "IS-002",
+        "name": "Lit Adulte 160x200 + Matelas",
+        "description": "Cadre bois + tête de lit rembourrée + matelas mémoire de forme",
+        "price_mad": 6999,
+        "discounted_price_mad": 6649,
+        "inventory": 12,
+        "rating": 4.4,
+        "tags": ["lit", "matelas", "chambre"],
+        "availability": "En stock"
+      },
+      {
+        "id": "IS-003",
+        "name": "Table à Manger + 6 Chaises",
+        "description": "Table extensible bois massif 140-180cm + 6 chaises tissu",
+        "price_mad": 7500,
+        "discounted_price_mad": 7125,
+        "inventory": 6,
+        "rating": 4.2,
+        "tags": ["table", "chaises", "salle à manger"],
+        "availability": "En stock"
+      }
+    ]
+  },
+  {
+    "name": "Yatout Home",
+    "category": "Ameublement",
+    "discount": "-5%",
+    "products": [
+      {
+        "id": "YH-001",
+        "name": "Bibliothèque Design 5 étagères",
+        "description": "Bibliothèque en bois mélaminé blanc, modulable, 180x80cm",
+        "price_mad": 2299,
+        "discounted_price_mad": 2184,
+        "inventory": 15,
+        "rating": 4.2,
+        "tags": ["bibliothèque", "rangement", "design"],
+        "availability": "En stock"
+      },
+      {
+        "id": "YH-002",
+        "name": "Ensemble Literie Complète",
+        "description": "Drap housse + 2 taies + couette + oreiller, 100% coton",
+        "price_mad": 1299,
+        "discounted_price_mad": 1234,
+        "inventory": 30,
+        "rating": 4.4,
+        "tags": ["literie", "coton", "chambre"],
+        "availability": "En stock"
+      }
+    ]
+  }
+]
