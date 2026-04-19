@@ -12,6 +12,7 @@ dependencies = [
     "langchain-core>=0.3.28",
     "pydantic>=2.9.0",
     "langchain>=1.2.15",
+    "rapidfuzz>=3.10.0",
 ]
 
 [build-system]

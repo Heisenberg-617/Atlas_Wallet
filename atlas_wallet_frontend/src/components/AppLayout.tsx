@@ -1,7 +1,7 @@
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
 import { useEffect } from "react";
-import { MessageSquare, Wallet, Package, LogOut, Sparkles } from "lucide-react";
+import { MessageSquare, Wallet, Package, ShoppingCart, LogOut, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function AppLayout() {
@@ -18,6 +18,7 @@ export default function AppLayout() {
 
   const navItems = [
     { to: "/app", icon: MessageSquare, label: "Chat", end: true },
+    { to: "/app/cart", icon: ShoppingCart, label: "Cart" },
     { to: "/app/wallet", icon: Wallet, label: "Wallet" },
     { to: "/app/orders", icon: Package, label: "Orders" },
   ];
@@ -33,6 +34,23 @@ export default function AppLayout() {
             </div>
             <span className="font-display font-bold text-lg">Atlas</span>
           </div>
+          <div className="hidden lg:flex items-center gap-1">
+            {navItems.map(({ to, icon: Icon, label, end }) => (
+              <NavLink
+                key={to}
+                to={to}
+                end={end}
+                className={({ isActive }) =>
+                  `flex items-center gap-2 rounded-xl px-3 py-2 text-sm font-medium transition-colors ${
+                    isActive ? "bg-primary-soft text-primary" : "text-muted-foreground hover:bg-secondary"
+                  }`
+                }
+              >
+                <Icon className="h-4 w-4" />
+                {label}
+              </NavLink>
+            ))}
+          </div>
           <Button variant="ghost" size="sm" onClick={() => signOut().then(() => nav("/auth"))}>
             <LogOut className="h-4 w-4" />
           </Button>
@@ -45,7 +63,7 @@ export default function AppLayout() {
 
       {/* Bottom nav (mobile-first) */}
       <nav className="fixed bottom-0 inset-x-0 z-40 border-t bg-background/95 backdrop-blur-lg lg:hidden">
-        <div className="grid grid-cols-3 max-w-5xl mx-auto">
+        <div className="grid grid-cols-4 max-w-5xl mx-auto">
           {navItems.map(({ to, icon: Icon, label, end }) => (
             <NavLink
               key={to}

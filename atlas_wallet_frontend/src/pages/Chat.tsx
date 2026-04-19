@@ -137,10 +137,12 @@ export default function Chat() {
                   </div>
                 </div>
                 {m.products && (
-                  <div className="grid gap-3 sm:grid-cols-3 pl-9">
-                    {m.products.map((p, i) => (
-                      <ProductCard key={i} p={p} onSelect={() => setSelected(p)} />
-                    ))}
+                  <div className="pl-9 max-w-4xl">
+                    <div className="grid gap-3 grid-cols-1 sm:grid-cols-2">
+                      {m.products.map((p, i) => (
+                        <ProductCard key={`${p.product_id}-${i}`} p={p} onSelect={() => setSelected(p)} />
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>
@@ -186,14 +188,8 @@ export default function Chat() {
 
       <PaymentSheet
         product={selected}
-        walletBalance={walletBalance}
         onClose={() => setSelected(null)}
-        onSuccess={() => {
-          setSelected(null);
-          void atlasWalletBalance()
-            .then(setWalletBalance)
-            .catch(() => {});
-        }}
+        onSuccess={() => setSelected(null)}
       />
     </div>
   );
@@ -229,7 +225,7 @@ function ProductCard({ p, onSelect }: { p: Product; onSelect: () => void }) {
         </span>
       </div>
       <p className="text-xs text-muted-foreground italic line-clamp-2 mb-3">"{p.why}"</p>
-      <div className="text-xs font-semibold text-primary group-hover:underline">Choose payment →</div>
+      <div className="text-xs font-semibold text-primary group-hover:underline">Add to cart →</div>
     </button>
   );
 }

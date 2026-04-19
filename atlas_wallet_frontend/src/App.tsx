@@ -10,6 +10,7 @@ import AppLayout from "./components/AppLayout";
 import Chat from "./pages/Chat";
 import WalletPage from "./pages/WalletPage";
 import Orders from "./pages/Orders";
+import Cart from "./pages/Cart";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="/auth" element={<Auth />} />
             <Route path="/app" element={<AppLayout />}>
               <Route index element={<Chat />} />
+              <Route path="cart" element={<Cart />} />
               <Route path="wallet" element={<WalletPage />} />
               <Route path="orders" element={<Orders />} />
             </Route>

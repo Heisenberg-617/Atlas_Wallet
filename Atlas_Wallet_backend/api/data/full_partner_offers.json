@@ -298,7 +298,7 @@
         "discounted_price_mad": 251,
         "inventory": 120,
         "rating": 4.2,
-        "tags": ["t-shirt", "logo", "casual"],
+        "tags": ["t-shirt", "logo", "casual", "coton jersey"],
         "sizes": ["S", "M", "L", "XL", "XXL"],
         "availability": "En stock"
       }
@@ -466,7 +466,7 @@
   },
   {
     "name": "Samsung",
-    "category": "Electronique",
+    "category": "électronique",
     "discount": "-5%",
     "products": [
       {
@@ -510,14 +510,14 @@
         "discounted_price_mad": 1139,
         "inventory": 60,
         "rating": 4.3,
-        "tags": ["écouteurs", "anc", "wireless"],
+        "tags": ["écouteurs", "anc", "wireless", "wireless headphones", "écouteurs sans fil"],
         "availability": "En stock"
       }
     ]
   },
   {
     "name": "Huawei",
-    "category": "Electronique",
+    "category": "électronique",
     "discount": "-100 dhs",
     "products": [
       {
@@ -544,13 +544,13 @@
       },
       {
         "id": "HW-003",
-        "name": "FreeBuds 5i",
+        "name": "FreeBuds Se 3",
         "description": "Écouteurs True Wireless, ANC multi-mode, autonomie 28h",
-        "price_mad": 999,
-        "discounted_price_mad": 899,
+        "price_mad": 550,
+        "discounted_price_mad": 450,
         "inventory": 50,
         "rating": 4.1,
-        "tags": ["écouteurs", "anc", "wireless"],
+        "tags": ["écouteurs", "anc", "wireless", "wireless headphones", "écouteurs sans fil"],
         "availability": "En stock"
       }
     ]
@@ -1196,7 +1196,7 @@
         "discounted_price_mad": 300,
         "inventory": 200,
         "rating": 4.7,
-        "tags": ["PSN", "PlayStation", "code"],
+        "tags": ["PSN", "PlayStation", "code", "carte playstation"],
         "availability": "En stock"
       },
       {

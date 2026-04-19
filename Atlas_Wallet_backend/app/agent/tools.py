@@ -27,19 +27,22 @@ def get_conv_id() -> str:
 @tool
 def search_products(
     query: str,
-    category: Optional[str] = None,
     min_price: Optional[float] = None,
     max_price: Optional[float] = None,
     min_rating: Optional[float] = None,
 ) -> str:
     """Search for partner products matching the user's criteria.
 
-    Use this whenever the user is looking for a product, a deal, wants to browse
-    offers, or mentions a category / brand / price range.
+    Use this whenever the user is looking for a product, a deal, or wants to browse offers.
+    Text matching uses **product name and tags only** — put style, type, or domain words in
+    `query` (e.g. "smartphone", "running shoes"); do not rely on a separate category filter.
+
+    **One product intent per call:** if the user asks for several different items in the same
+    message (e.g. phone + headphones), call `search_products` **once per item** with a focused
+    `query` each time. The UI shows **one card (best match) per successful call**, in order.
 
     Args:
-        query: Free-text search (product name, brand, keyword).
-        category: Partner category filter (e.g. "Restauration", "Mode", "Sport").
+        query: Free-text search over product names and tags (fuzzy / partial match).
         min_price: Minimum discounted price in MAD.
         max_price: Maximum discounted price in MAD.
         min_rating: Minimum rating (0-5).
@@ -50,43 +53,64 @@ def search_products(
     conv_id = get_conv_id()
     results = SearchService.search(
         query=query,
-        category=category,
         min_price=min_price,
         max_price=max_price,
         min_rating=min_rating,
+        limit=1,
     )
 
-    # Store raw results so the API layer can build cards
     ConversationContext.set(conv_id, "last_search_results", results)
 
     primary = results["primary"]
-    alternatives = results["alternatives"]
 
     if not primary:
         return f"Aucun produit trouvé pour '{query}'. Essayez d'autres critères."
 
-    lines = [f"Trouvé {results['total_found']} produit(s). Voici les {len(primary)} meilleurs résultats :"]
-    for i, p in enumerate(primary, 1):
-        saved = p["price_mad"] - p["discounted_price_mad"]
-        lines.append(
-            f"{i}. **{p['name']}** ({p['partner_name']}) — "
-            f"~~{p['price_mad']}~~ → **{p['discounted_price_mad']} MAD** "
-            f"({p.get('partner_discount', '')} / -{saved} MAD) | "
-            f"⭐ {p.get('rating', 'N/A')} | ID: {p['id']}"
+    p = primary[0]
+    added, card_index = ConversationContext.append_search_best_product(conv_id, p)
+    total = results["total_found"]
+    lines = [
+        f"**Meilleure option** pour « {query} » (sur {total} correspondance(s) ; **nom** et **tags** uniquement) :",
+    ]
+
+    def _one_product_block(idx: int, prod: dict) -> list[str]:
+        saved = int(prod.get("price_mad", 0)) - int(prod.get("discounted_price_mad", 0))
+        tags = prod.get("tags") or []
+        tag_str = ", ".join(str(t) for t in tags) if tags else "—"
+        desc = (prod.get("description") or "").strip()
+        inv = prod.get("inventory")
+        stock_bits = [prod.get("availability") or ""]
+        if inv is not None:
+            stock_bits.append(f"stock ~{inv}")
+        rel = prod.get("relevance_score")
+        head = (
+            f"{idx}. **{prod['name']}** — partenaire **{prod['partner_name']}** — catégorie **{prod.get('partner_category', '')}** "
+            f"— ID `{prod['id']}`"
         )
+        if rel is not None:
+            head += f" — pertinence {rel}/100"
+        block = [
+            head,
+            f"   • Prix : ~~{prod['price_mad']}~~ → **{prod['discounted_price_mad']} MAD** "
+            f"({prod.get('partner_discount', '')}, économie {saved} MAD)",
+            f"   • Note : ⭐ {prod.get('rating', 'N/A')} | {' | '.join(b for b in stock_bits if b)}",
+            f"   • Tags : {tag_str}",
+        ]
+        if desc:
+            block.append(f"   • Description : {desc}")
+        return block
 
-    if alternatives:
-        lines.append(f"\n**Alternatives ({len(alternatives)}) :**")
-        for i, p in enumerate(alternatives, 1):
-            lines.append(
-                f"  {i}. {p['name']} ({p['partner_name']}) — "
-                f"{p['discounted_price_mad']} MAD | ID: {p['id']}"
-            )
+    lines.extend(_one_product_block(1, p))
 
-    lines.append(
-        "\n\n_(Rappel : l’interface affiche ces articles en cartes sous ta réponse — "
-        "ne recopie pas cette liste dans le message utilisateur.)_"
-    )
+    if added:
+        lines.append(
+            f"\n\n_(Carte **n°{card_index}** dans la rangée sous ta réponse — une carte par recherche / "
+            "produit visé ; ne recopie pas les détails dans le message utilisateur.)_"
+        )
+    else:
+        lines.append(
+            "\n\n_(Ce produit était déjà dans la rangée de cartes pour ce tour — pas de doublon.)_"
+        )
     return "\n".join(lines)
 
 

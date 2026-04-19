@@ -65,41 +65,25 @@ class ChatResponse(BaseModel):
 # Helpers
 # ---------------------------------------------------------------------------
 
-def _build_cards(raw_results: dict[str, Any]) -> list[ProductCard]:
-    cards: list[ProductCard] = []
-    for p in raw_results.get("primary", []):
-        cards.append(
-            ProductCard(
-                product_id=p.get("id", ""),
-                name=p.get("name", ""),
-                description=p.get("description", ""),
-                price_mad=p.get("price_mad", 0),
-                discounted_price_mad=p.get("discounted_price_mad", 0),
-                discount=p.get("partner_discount", ""),
-                partner=p.get("partner_name", ""),
-                category=p.get("partner_category", ""),
-                rating=p.get("rating"),
-                availability=p.get("availability", ""),
-                is_primary=True,
-            )
-        )
-    for p in raw_results.get("alternatives", []):
-        cards.append(
-            ProductCard(
-                product_id=p.get("id", ""),
-                name=p.get("name", ""),
-                description=p.get("description", ""),
-                price_mad=p.get("price_mad", 0),
-                discounted_price_mad=p.get("discounted_price_mad", 0),
-                discount=p.get("partner_discount", ""),
-                partner=p.get("partner_name", ""),
-                category=p.get("partner_category", ""),
-                rating=p.get("rating"),
-                availability=p.get("availability", ""),
-                is_primary=False,
-            )
-        )
-    return cards
+def _product_to_card(p: dict[str, Any], *, is_primary: bool = True) -> ProductCard:
+    return ProductCard(
+        product_id=p.get("id", ""),
+        name=p.get("name", ""),
+        description=p.get("description", ""),
+        price_mad=p.get("price_mad", 0),
+        discounted_price_mad=p.get("discounted_price_mad", 0),
+        discount=p.get("partner_discount", ""),
+        partner=p.get("partner_name", ""),
+        category=p.get("partner_category", ""),
+        rating=p.get("rating"),
+        availability=p.get("availability", ""),
+        is_primary=is_primary,
+    )
+
+
+def _build_cards_from_best_products(products: list[dict[str, Any]]) -> list[ProductCard]:
+    """One UI card per successful `search_products` call (best match each), in call order."""
+    return [_product_to_card(p, is_primary=(i == 0)) for i, p in enumerate(products)]
 
 
 # ---------------------------------------------------------------------------
@@ -111,6 +95,7 @@ async def chat(request: ChatRequest):
     """Send a message to the Atlas agent and get a structured response."""
     conv_id = request.conversation_id
     set_conv_id(conv_id)
+    ConversationContext.reset_search_bests_turn(conv_id)
 
     try:
         result = await graph.ainvoke(
@@ -128,7 +113,7 @@ async def chat(request: ChatRequest):
             break
 
     # Read ephemeral context set by tools during this turn
-    search_results = ConversationContext.get_value(conv_id, "last_search_results", {})
+    search_bests = ConversationContext.get_value(conv_id, "search_bests_this_turn") or []
     transaction = ConversationContext.get_value(conv_id, "last_transaction")
     cart_summary = CartService.get_summary(conv_id)
 
@@ -136,9 +121,9 @@ async def chat(request: ChatRequest):
     response_type = "general"
     cards: list[ProductCard] = []
 
-    if search_results and search_results.get("primary"):
+    if search_bests:
         response_type = "search_results"
-        cards = _build_cards(search_results)
+        cards = _build_cards_from_best_products(search_bests)
 
     if transaction is not None:
         response_type = "checkout_result"
@@ -150,6 +135,7 @@ async def chat(request: ChatRequest):
 
     # Clear ephemeral data after reading
     ConversationContext.set(conv_id, "last_search_results", {})
+    ConversationContext.set(conv_id, "search_bests_this_turn", [])
     ConversationContext.set(conv_id, "last_transaction", None)
 
     return ChatResponse(
@@ -189,6 +175,14 @@ async def add_cart_item(conversation_id: str, body: AddCartItemBody):
     err = add_product_to_cart(conversation_id, body.product_id, body.quantity)
     if err:
         raise HTTPException(status_code=400, detail=err)
+    summary = CartService.get_summary(conversation_id)
+    return CartSummary(**summary)
+
+
+@router.delete("/cart/{conversation_id}/items/{product_id}", response_model=CartSummary)
+async def remove_cart_item(conversation_id: str, product_id: str):
+    """Remove one product line from the cart."""
+    CartService.remove_item(conversation_id, product_id)
     summary = CartService.get_summary(conversation_id)
     return CartSummary(**summary)
 

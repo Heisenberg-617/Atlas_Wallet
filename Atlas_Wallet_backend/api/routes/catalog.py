@@ -12,8 +12,7 @@ router = APIRouter()
 
 @router.get("/products")
 async def list_products(
-    query: Optional[str] = Query(None, description="Text search"),
-    category: Optional[str] = Query(None, description="Category filter"),
+    query: Optional[str] = Query(None, description="Text search (product name and tags only)"),
     min_price: Optional[float] = Query(None),
     max_price: Optional[float] = Query(None),
     min_rating: Optional[float] = Query(None),
@@ -22,7 +21,6 @@ async def list_products(
     """Search / list products with optional filters."""
     results = SearchService.search(
         query=query or "",
-        category=category,
         min_price=min_price,
         max_price=max_price,
         min_rating=min_rating,
